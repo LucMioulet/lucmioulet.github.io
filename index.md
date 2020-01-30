@@ -1,2 +1,1 @@
-# About
-I am a Machine learning and software engineer. I hold a PhD in Signal processing.
+Short articles and code snippets that help a lot!
