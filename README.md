@@ -1,3 +1,3 @@
-# Your blog
+# About
 
-This is the repository for your blog! Click *_config.yml* above to get started and fill in the details. Then click *index.md* and edit it to start creating your home page.
+Created using the fastai/fastai_template. Thanks to the fastai team.
