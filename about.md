@@ -2,4 +2,4 @@
 
 I am a Machine learning and software engineer. I hold a PhD in Signal processing.
 
-https://www.linkedin.com/in/luc-mioulet/
+[LinkedIn](https://www.linkedin.com/in/luc-mioulet/)
