@@ -2,7 +2,7 @@
 
 ## The issue with data augmentation
 Data augmentation has become central to training most deep learning models as usually more data means better performance.
-See the (paper)[https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf] of Alon Halevy, Peter Norvig, and Fernando Pereira.
+See the [paper](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf) of Alon Halevy, Peter Norvig, and Fernando Pereira.
 The idea behind data augmentation is that, by being trained a model on many slightly distorted instances of labeled data points, the model will learn to create a smoother decision boundary.
 
 Data-augmentation combined with other sources of randomness during training, such as dropout, model-selection, stochastic gradient descent will necessarily mean that at one point during the training, the same data-point and its data augmented set will provide different labels.
