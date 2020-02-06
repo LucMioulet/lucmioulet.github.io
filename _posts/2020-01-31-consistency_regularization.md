@@ -9,7 +9,7 @@ Data-augmentation combined with other sources of randomness during training, suc
 This inconsistenty of the model output might be acceptable during the training regime of a model, but not during the inference.
 
 ## Consistency regularization
-Consistency regularization is a Semi-Supervised technique that, turns the issue of having this output inconsistency into an a new source of error for the training.
+Consistency regularization is a Semi-Supervised technique that, turns the issue of having this output inconsistency into an a new source of regularization during the training.
 A loss $$ L_{cons} $$ is added to the training loss. The $$ L_{cons} $$ loss is in charge of minimizing the distance between the different outputs produced from an augmented input.
 
 $$ 
@@ -25,7 +25,7 @@ The [publication](https://arxiv.org/pdf/1906.01916.pdf) makes a pretty good illu
 
 ![Boundaries](images/consistency-regularization-decision-boundary.png)
 
-**Consistency regularization means that you could train a classification model with few supervised samples using a cross-entropy loss, helped by unlabeled data with the consistency loss.**
+**Consistency regularization means that you could train a classifier with few supervised samples using a cross-entropy loss, helped by unlabeled data with the consistency loss.**
 
 ## Application
 
