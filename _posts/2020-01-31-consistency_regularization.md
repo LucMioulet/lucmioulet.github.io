@@ -23,7 +23,7 @@ It also provides a loss usable to train on unlabeled examples!
 
 The [publication by G. French et al.](https://arxiv.org/pdf/1906.01916.pdf) makes a pretty good illustation, of this phenomenon.
 
-![Boundaries](/_posts/images/consistency-regularization-decision-boundary.png)
+![Boundaries](/images/consistency-regularization-decision-boundary.png)
 
 **Consistency regularization means that you could train a classifier with few supervised samples using a cross-entropy loss, helped by unlabeled data with the consistency loss.**
 
