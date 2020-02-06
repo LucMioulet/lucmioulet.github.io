@@ -21,7 +21,7 @@ Any distance could be used, euclidean, cross-entropy, etc... it depends on the o
 Forcing this consistency forces the model to produce smoother decision boundaries. 
 It also provides a loss usable to train on unlabeled examples!
 The [publication](https://arxiv.org/pdf/1906.01916.pdf) makes a pretty good illustation, of this phenomenon.
-![Boundaries](../images/consistency-regularization-decision-boundary.png)
+![Boundaries](images/consistency-regularization-decision-boundary.png)
 
 **Consistency regularization means that you could train a classification model with few supervised samples using a cross-entropy loss, helped by unlabeled data with the consistency loss.**
 
