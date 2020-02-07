@@ -2,14 +2,15 @@
 
 ## The issue with data augmentation
 Data augmentation has become central to training most deep learning models as usually more data means better performance.
-See the [paper](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf) of Alon Halevy, Peter Norvig, and Fernando Pereira.
-The idea behind data augmentation is that, by being trained a model on many slightly distorted instances of labeled data points, the model will learn to create a smoother decision boundary.
+See the [paper](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf) of Alon Halevy, Peter Norvig, and Fernando Pereira, for more details about the unreasonable effectiveness of data.
 
-Data-augmentation combined with other sources of randomness during training, such as dropout, model-selection, stochastic gradient descent will necessarily mean that at one point during the training, the same data-point and its data augmented set will provide different labels.
+The idea behind data augmentation is that, training a model on many slightly distorted instances of labeled data points, the model will learn to create a smoother decision boundary around these augmented points. This is of course important in supervised learning, but even more in the case of semi-supervision, as you have very few data points.
+
+Data-augmentation combined with other sources of randomness during training, such as dropout, model-selection, stochastic gradient descent will necessarily mean that at one point during the training, the same data-point and its augmented set will provide different labels.
 This inconsistenty of the model output might be acceptable during the training regime of a model, but not during the inference.
 
 ## Consistency regularization
-Consistency regularization is a Semi-Supervised technique that, turns the issue of having this output inconsistency into an a new source of regularization during the training.
+Consistency regularization is a Semi-Supervised learning technique that, turns the issue of having this output inconsistency into an a new source of regularization during the training.
 A loss $$ L_{cons} $$ is added to the training loss. The $$ L_{cons} $$ loss is in charge of minimizing the distance between the different outputs produced from an augmented input.
 
 $$ 
