@@ -1,4 +1,4 @@
-# Consistency regularization
+# AI:Consistency regularization
 
 ## The issue with data augmentation
 Data augmentation has become central to training most deep learning models as usually more data means better performance.
