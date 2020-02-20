@@ -1,4 +1,4 @@
-# Changing the name of a dynamodb table
+# Engineering: Changing the name of a dynamodb table
 DynamoDB is a great Key-value database.
 One issue with it is that you cannot rename easily a table name. 
 This posts presents an easy and safe way of doing it.
