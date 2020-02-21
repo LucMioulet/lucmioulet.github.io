@@ -4,7 +4,9 @@
 Minimum cross-entropy thresholding or [Li's thresholding](https://www.sciencedirect.com/science/article/abs/pii/003132039390115D)
 is a computer vision technique used to binarize images. 
 As shown it the following images provided by scikit, this method works relatively well. 
+
 ![img](https://scikit-image.org/docs/dev/_images/sphx_glr_plot_threshold_li_001.png)
+
 These results are really good if you consider the fact that this method only provides one single threshold !
 
 
