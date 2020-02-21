@@ -46,6 +46,8 @@ So ranking and picking the top 10 is out of the question.
 What you can do is: 
  1. get the count of listened songs per band for every user
  2. apply per user the minimum cross entropy thresholding on the distribution of counts of listened songs per band
- 3. every band with a listen count above the returned threshold is part of the foreground of this user, therefore you can assume of his interests.
+ 3. filter the bands that have a count of listened songs above the threshold returned by Li's thresholding.
+ 
+The resulting bands are part the "foreground" of this user, therefore you can assume they are the favourite bands.
  
 It might be a strong assumption, but I have used Li's thresholding for similar uses, but in different context and it works pretty well !
